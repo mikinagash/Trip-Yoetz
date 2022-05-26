@@ -1,5 +1,5 @@
 import allure
-from Base.base import Base
+from Web.Base import base
 from selenium import webdriver
 
 

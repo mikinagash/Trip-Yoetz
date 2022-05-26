@@ -3,9 +3,10 @@ import random
 class TestRegister:
     url = "https://trip-yoetz.herokuapp.com/auth/register"
 
+
     def test_register_correct(self):
         body = {"birthDate": "2000-11-11",
-                "email": f"mikinagash@gmail.com{random.randint(1,100)}",
+                "email": f"mikinagash@gmail.com{random.random()}",
                 "image": "111",
                 "lastName": "nagash",
                 "name": "miki",

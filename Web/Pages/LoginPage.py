@@ -1,6 +1,6 @@
 import allure
 
-from Locators.LoginLocators import LoginLocators
+from Web.Locators.LoginLocators import LoginLocators
 from selenium.webdriver.common.by import By
 
 

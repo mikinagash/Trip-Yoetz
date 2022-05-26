@@ -3,7 +3,7 @@ import allure
 import pytest
 from selenium.webdriver.common.keys import Keys
 
-from Locators.Home_Locators import HomeLocators
+from Web.Locators.Home_Locators import HomeLocators
 from selenium.webdriver.common.by import By
 from time import sleep
 
@@ -21,7 +21,7 @@ class HomePage:
 
 #clicking nav bar in loop
     def enter_nuvbar(self):
-        nav_bar = self.driver.find_elements(By.XPATH, self.nav_bar_path)
+        nav_bar = self.driver.find_elements(By.ID, self.nav_bar_path)
         for i in range(len(nav_bar)):
             nav_bar[i].click()
             self.driver.back()
